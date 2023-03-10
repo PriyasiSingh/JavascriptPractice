@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const favFruits = [];
+        console.log(favFruits);
+        favFruits[0] = "apple";
+        favFruits[1] = "orange";
+        favFruits[2] = "bananas";
+
+        console.log(favFruits);
+
+        const favVeggies = [
+            "Spinach",
+            "Cauliflower",
+            ""
+        ];
+        console.log(favVeggies);
+
+        let text = "Hello";
+        const myArr = text.split("");
+
+        text = "";
+        for (let i = 0; i < myArr.length; i++) {
+            text += myArr[i] + "<br>"
+        }
+        console.log(text);
+
+        let padded = "5";
+        console.log(padded.padStart(7, "x"));
+
+        //Use the slice method to return the word "bananas"
+        let txt = "I can eat bananas all day";
+        let slicedTxt = txt.slice(10, 17);
+        console.log(slicedTxt);
+
+        //Use the correct String method to replace the word "Hello" 
+        //with the word "Welcome"
+        let repTxt = "Hello World";
+        repTxt = repTxt.replace("Hello", "Welcome");
+        console.log(repTxt);
+
+        //Alert the number of items in an array, using the correct Array property
+        const cars = ["Volvo", "Jeep", "Mercedes"];
+        alert(cars.length);
+
+        //Use the correct Array method to remove the last item of the fruits array
+        let lastFruit = favFruits.pop();
+        console.log(lastFruit);
+        console.log(favFruits);
+
+        //Use the splice() method to remove "Orange" and "Apple" from fruits.
+        const newfruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        console.log(newfruits.splice(1, 2));
+        console.log(newfruits);
+
+        //Use the correct Array method to sort the fruits array alphabetically
+        const sortFruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        console.log(sortFruits.sort());
+
+
+    </script>
+</body>
+
+</html>
